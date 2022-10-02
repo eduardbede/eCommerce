@@ -1,0 +1,234 @@
+.ul-list{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+    padding-left: clamp(15px, 5%, 100px);
+    color: #1D1F22;
+    text-transform: uppercase;
+}
+.nav-bar{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-logo{
+    width: 41px;
+    height: 41px;
+    left: 699px;
+    top: calc(50% - 41px/2 + 4.5px);
+    padding-right: clamp(15px, 5%, 100px);
+    padding-left: 2%;
+}
+
+.li-words{
+    letter-spacing: .1em;
+    transition: text-shadow .3s;
+    padding: 28px 16px 32px 16px;
+    cursor: pointer;
+}
+.li-selected{
+    border-bottom: 2px solid #5ECE7B;
+    font-weight: 600;
+    color: #5ECE7B;
+    text-shadow: 0 0 .65px #5ECE7B, 0 0 .65px #5ECE7B
+}
+
+.currency-sign{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #1D1F22;
+}
+
+.vectorImg{
+    height: 2px;
+    width: 6px;
+    padding-top: 15px;
+}
+
+.empty-cart{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.right-group{
+    display: flex;
+    align-items: center;
+    gap:22px;
+    padding-right: clamp(15px, 5%, 101px);
+}
+
+.currency-select{
+    cursor: pointer;
+}
+
+.select-currency{
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #1D1F22;
+}
+.select-currency:focus, .select-currency:focus{
+    outline: none;
+}
+
+.currency-select{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    width: 114px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 78px;
+    top:65px;
+    filter: drop-shadow(0px 4px 35px rgba(168, 172, 176, 0.19));
+    background: #FFFFFF;
+    z-index: 1;
+}
+.select-option{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    width: 114px;
+    height: 45px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #1D1F22;
+}
+
+.select-option:hover{
+    background-color: #EEEEEE
+}
+
+.img--div{
+    padding-left: 5px;
+    height: 5px;
+    margin-bottom: 11px;
+}
+.symbol-div{
+    width: 10px;
+}
+
+.currency-selector{
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    gap:5px;
+    color: #1D1F22;
+}
+
+.currency-currency{
+    text-align: center;
+    width: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    
+}
+
+.mini--cart{
+    color: #1D1F22;
+    position: absolute;
+    width: 325px;
+    max-height: 677px;
+    top: 78px;
+    right: 72px;
+    background-color: white;
+    z-index: 1000;
+    
+}
+.scroll {
+    overflow: auto;
+    scrollbar-width: 5px;
+ }
+
+ .scroll::-webkit-scrollbar {
+     width: 5px;
+     
+ }
+ .scroll::root{
+    scrollbar-width: thin !important;
+ }
+ .scroll::-webkit-scrollbar-track {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+     border-radius: 10px;
+ }
+ 
+ .scroll::-webkit-scrollbar-thumb {
+     border-radius: 10px;
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+ }
+
+.count--div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    background-color: #1D1F22;
+    position: absolute;
+    right: -12px;
+    top: -10px;
+    border-radius: 60px;
+}
+
+.count--div > p{
+    color: white;
+}
+
+.miniCart-quantity{
+    font-size: 13px;
+}
+.miniCart-quantity100{
+    font-size: 2.0vw;
+}
+
+.absolute--selectCat{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80px;
+}
+
+.menu--buttons{
+    cursor: pointer;
+}
+
+.menu--color{
+    background-color: rgba(57, 55, 72, 0.22);
+}
+
+@media (max-width: 764px){
+    .mini--cart{
+            right: 40px !important;
+        }
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+    .miniCart-quantity {
+        font-size: 1.2vw;
+    }
+}

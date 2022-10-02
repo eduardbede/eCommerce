@@ -1,0 +1,42 @@
+.unselectable{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.right-CarouselButton{
+    opacity: 73%;
+    cursor: pointer;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    bottom:16px;
+    right: 48px;
+    background: rgba(0, 0, 0, 0.73);
+}
+
+.left-CarouselButton{
+    opacity: 73%;
+    cursor: pointer;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    bottom:16px;
+    right: 16px;
+    background: rgba(0, 0, 0, 0.73);
+}
+
+.right-CarouselImg{
+    position: absolute;
+    left: 30%;
+    top: 25%;
+}
+
+.left-CarouselImg{
+    position: absolute;
+    left: 37%;
+    top: 23%;
+}

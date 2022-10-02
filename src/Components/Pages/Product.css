@@ -1,0 +1,249 @@
+.div-product{
+    min-height: calc(100vh - 160px);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 80px;
+    display: flex;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+      
+}
+.single-img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 600px;
+    width: 600px;
+    margin-left: 23px;
+}
+
+.min-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+}
+
+.img--img{
+    max-width:100%;
+    max-height:100%;
+    object-fit: contain;;
+}
+.all--img{
+    /* display: grid;
+    align-items: center;
+    justify-content: center;
+    gap:32px */
+    height: 600px;
+    overflow-y: auto;
+    min-width: 97px;
+    overflow-x: hidden;
+}
+
+.all--img > :not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+.detail--div{
+    margin-left: 100px;
+    width: 292px;
+}
+.brand-p{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 27px;
+}
+
+.name-p{
+    margin: 0;
+    margin-top: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 27px;
+}
+
+.attribute-p{
+    margin:0;
+    margin-top: 43px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 27px;
+    color: #1D1F22;
+}
+
+.all-attributes{
+    margin-top: 43px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.id-name{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #1D1F22;
+}
+
+.items--value{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    cursor: pointer;
+    width: 63px;
+    height: 45px;
+    border: 1px solid #1D1F22;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #1D1F22;
+}
+
+.elements--div{
+    padding-top: 8px;
+    display: flex;
+    gap: 12px
+}
+
+.color--div{
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 0 0 1px #ffffff inset;
+}
+.color--diva{
+    box-shadow: 0 0 0 1px #bebdbd inset;
+}
+
+.color--divBorder{
+    border: 1px solid #5ECE7B;
+}
+.items--valueDiv{
+    background: #1D1F22;
+    border: 1px solid #1D1F22;
+    color: white;
+}
+.price--name{
+    margin: 0;
+    margin-top: 36px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    
+}
+
+.price--div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 18px;
+    color: #1D1F22;
+}
+
+.total--price{
+    height: 46px;
+    min-width: 86px;
+    display: grid;
+    align-items: center;
+}
+
+.button--add{
+    cursor: pointer;
+    border: none;
+    width: 292px;
+    height: 52px;
+    font-family: 'Raleway', sans-serif;
+    background: #5ECE7B;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.button--div{
+    margin-top: 20px;
+    width: 292px;
+    height: 52px;
+}
+
+.text--div{
+    /* padding-top: 20px; */
+    width: 292px;
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 159.96%;
+    color: #1D1F22;
+}
+
+.no-stock{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 159.96%;
+    color: red;
+}
+
+.background-colorProduct{
+    background-color: rgba(57, 55, 72, 0.22);
+}
+
+
+
+@media (max-width: 764px){
+        .div-product{
+            padding-left: 5%;
+            padding-right: 5%;
+            flex-wrap: wrap;
+            justify-content: center;
+            min-height:0;
+        }
+
+        .all--img{
+            display: flex;
+            height: auto;
+            padding-top: 20px;
+            gap: 10px;
+        }
+        .single-img{
+            margin-left:auto;
+            height: 350px;
+        }
+        .detail--div {
+            margin-left: 0;
+        }
+        
+  
+}
