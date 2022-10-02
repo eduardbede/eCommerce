@@ -1,7 +1,7 @@
 import React from "react"
 import Home from "./Components/Pages/Home"
 import Header from "./Components/Header/Header"
-import { BrowserRouter } from "react-router-dom"
+import { BrowserRouter, HashRouter } from "react-router-dom"
 
 export default class App extends React.Component {
   
@@ -110,7 +110,7 @@ export default class App extends React.Component {
 
   render(){
       return (
-        <BrowserRouter>
+        <HashRouter>
               <Header allCart={this.state}
                       changeIndex={this.changeIndexChild}
                       changeCurrency={this.changeCurrency}
@@ -126,7 +126,7 @@ export default class App extends React.Component {
                     addCart={this.modifyProduct}
                     menuOpen={this.menuOpen}
               />
-        </BrowserRouter>
+        </HashRouter>
         
       )
   }

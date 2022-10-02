@@ -65,7 +65,7 @@ class Product extends React.Component{
     } */
 
     componentDidMount(){
-      this.setState(data.data);
+      this.setState(data?.data);
     }
 
     getId=()=>{

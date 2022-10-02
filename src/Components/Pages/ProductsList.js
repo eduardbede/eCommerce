@@ -57,7 +57,7 @@ class ProductsList extends React.Component{
     } */
 
     componentDidMount(){
-      this.setState(data.data);
+      this.setState(data?.data);
     }
 
     //funciton add product form list

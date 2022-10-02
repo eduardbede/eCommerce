@@ -39,7 +39,7 @@ import { GrClose } from "react-icons/gr";
 
 
     componentDidMount(){
-        this.setState(data.data)
+        this.setState(data?.data)
     }
 
 
