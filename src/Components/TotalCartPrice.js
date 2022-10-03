@@ -3,6 +3,12 @@ import './TotalCartPrice.css'
 
 export default class TotalCartPrice extends Component {
 
+  checkVibrate=()=>{
+    if ("vibrate" in navigator) {
+      navigator.vibrate(1);
+    }
+  }
+
   render() {
         let total = {
             price:[],
@@ -20,7 +26,6 @@ export default class TotalCartPrice extends Component {
             });
             const calculateTotal = total.price.reduce((prev, current)=>{return prev + current},0).toFixed(2);
             const quantityTotal = total.quantity.reduce((prev, current)=>{return prev + current},0);
-
             const taxTotal = 21/100 * calculateTotal;
     return (
       <div className='total-cartPrices'>
@@ -30,7 +35,7 @@ export default class TotalCartPrice extends Component {
             <div className='total-quantityPrices'>{quantityTotal}</div>
             <div className='total-Divv'>Total:</div>
             <div className='total-priceCartDiv'>{total.symbol}{calculateTotal}</div>
-            <button className='button-cartOrder' onClick={()=>console.log(`Order Successfully`)}>ORDER</button>
+            <button className='button-cartOrder' onClick={()=>{console.log(`Order Successfully`); this.checkVibrate()}}>ORDER</button>
       </div>
     )
   }
