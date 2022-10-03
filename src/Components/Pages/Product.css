@@ -189,6 +189,10 @@
     color: #FFFFFF;
 }
 
+.button--add:active{
+    background: #11461f;
+}
+
 .button--div{
     margin-top: 20px;
     width: 292px;

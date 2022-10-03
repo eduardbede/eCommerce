@@ -138,6 +138,11 @@
     font-size: large;
 }
 
+.button-add:active,
+.button-sub:active{
+    background: #808080;
+}
+
 .img--divMini{
     width: 121px;
     display: flex;
@@ -193,6 +198,10 @@
     line-height: 120%;
     color: #1D1F22;
     cursor: pointer;
+}
+
+.left-bagButton:active{
+    background: #838383;
 }
 
 .right-bagButton{
