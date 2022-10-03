@@ -1,7 +1,7 @@
 import React from "react"
 import Home from "./Components/Pages/Home"
 import Header from "./Components/Header/Header"
-import { BrowserRouter, HashRouter } from "react-router-dom"
+import { HashRouter } from "react-router-dom"
 
 export default class App extends React.Component {
   
@@ -16,6 +16,7 @@ export default class App extends React.Component {
           menuOpen:false
         }
 
+        //update localstorage
   componentDidUpdate(prevProps, prevState){
       if(JSON.stringify(prevState) !== JSON.stringify(prevProps)){
         localStorage.setItem('saveObj', JSON.stringify(this.state));
@@ -56,7 +57,8 @@ export default class App extends React.Component {
   miniCartIsOpen=(pass)=>{
     this.setState({
                     miniCartIsOpen: pass,
-                    isOpen:false
+                    isOpen:false,
+                    menuOpen:false
                   })
   }
 
@@ -82,6 +84,7 @@ export default class App extends React.Component {
       }
   }
 
+  //modify quantity of the product
   modifyProduct=(index, data)=>{
     if(data === 'sub'){
       this.setState(prevState=>{

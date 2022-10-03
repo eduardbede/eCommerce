@@ -42,8 +42,6 @@ import { GrClose } from "react-icons/gr";
         this.setState(data?.data)
     }
 
-
-
     handleClick = (event) => {
         this.setState({index: parseInt(event.target.id)});
         this.props.changeIndex(parseInt(event.target.id), event.target.dataset.name)
@@ -56,7 +54,7 @@ import { GrClose } from "react-icons/gr";
     }
 
     mareFunctie=(e)=>{
-        e.stopPropagation()
+        /* e.stopPropagation() */
         this.props.functionIsOpen(false);
         this.props.miniCartOpen(false)
         this.props.menuOpen(false)
@@ -73,8 +71,6 @@ import { GrClose } from "react-icons/gr";
         e.stopPropagation();
         this.props.menuOpen(!this.props.allCart.menuOpen)
         this.props.functionIsOpen(false);
-        this.props.miniCartOpen(false)
-
     }
 
     functionCloseMiniCart=(e)=>{
@@ -101,7 +97,7 @@ import { GrClose } from "react-icons/gr";
         this.props.allCart.cart.map(element=>{
                 return totalQuantity =[...totalQuantity, element.quantity];
             });
-            const quantityTotal = totalQuantity.reduce((prev, current)=>{return prev+current},0);
+        const quantityTotal = totalQuantity.reduce((prev, current)=>{return prev+current},0);
 
         return(
                 <nav className="nav-bar" onClick={(e)=>{this.mareFunctie(e)}}>

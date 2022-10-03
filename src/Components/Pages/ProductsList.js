@@ -2,7 +2,7 @@ import React from "react";
 import data from "../data/data";
 import { Link  } from "react-router-dom";
 import "./ProductsList.css"
-import { getData } from "../data/fetchData";
+/* import { getData } from "../data/fetchData"; */
 import EmptyCart from '../../assets/img/EmptyCartButton.svg'
 
 
