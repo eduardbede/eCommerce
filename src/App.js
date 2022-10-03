@@ -64,9 +64,6 @@ export default class App extends React.Component {
 
 //function that add product to array
   pushCart=(cartPush)=>{
-    if ("vibrate" in navigator) {
-      navigator.vibrate(1);
-    }
       const id = this.state.cart.findIndex(el=>{
         return (el.cart[0]?.id === cartPush.cart[0]?.id) && (el.colorIndex === cartPush.colorIndex) && (el.capacityIndex === cartPush.capacityIndex)
                && (el.sizeIndex=== cartPush.sizeIndex) && (el.withTouchIdIndex === cartPush.withTouchIdIndex) &&
@@ -89,9 +86,6 @@ export default class App extends React.Component {
 
   //modify quantity of the product
   modifyProduct=(index, data)=>{
-    if ("vibrate" in navigator) {
-      navigator.vibrate(1);
-    }
     if(data === 'sub'){
       this.setState(prevState=>{
         return{...prevState, cart:prevState.cart.map((el, i)=>{
