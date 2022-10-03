@@ -22,12 +22,17 @@
 }
 
 .min-img{
+    border: 1px solid #00000038;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     width: 80px;
     height: 80px;
+}
+
+.min-img:active{
+    border: 1px solid #11461f;
 }
 
 .img--img{
@@ -236,9 +241,9 @@
         }
 
         .all--img{
+            padding: 20px 0 ;
             display: flex;
             height: auto;
-            padding-top: 20px;
             gap: 10px;
         }
         .single-img{
